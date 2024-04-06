@@ -17,11 +17,11 @@ public class Calculator1 {
             double num2 = scanner.nextDouble();
 
             // Choose operation
-            System.out.println("Choose an operation:");
-            System.out.println("1. Addition (+)");
-            System.out.println("2. Subtraction (-)");
-            System.out.println("3. Multiplication (*)");
-            System.out.println("4. Division (/)");
+            System.out.println("Choose an operation:\n");
+            System.out.println("1. Addition (+)\n");
+            System.out.println("2. Subtraction (-)\n");
+            System.out.println("3. Multiplication (*)\n");
+            System.out.println("4. Division (/)\n");
             System.out.println("5. Exit");
             System.out.print("Enter your choice (1-5): ");
             int choice = scanner.nextInt();
@@ -43,7 +43,7 @@ public class Calculator1 {
                     if (num2 != 0) {
                         result = num1 / num2;
                     } else {
-                        System.out.println("Error: Division by zero!");
+                        System.out.println("Error: Division by zero!\n");
                         continue; // Skip to next iteration
                     }
                     break;
@@ -51,7 +51,8 @@ public class Calculator1 {
                     exit = true;
                     break; // Exit the loop
                 default:
-                    System.out.println("Invalid choice!");
+                    System.out.println("Invalid choice!\n");
+                    System.out.println("------------------------------------------------");
                     continue; // Skip to next iteration
             }
 
